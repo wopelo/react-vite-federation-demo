@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './Button.css'
 
 export default function Button() {
+  console.log('yyyy', useState)
   const [state, setState] = useState(0)
 
   return (

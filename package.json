@@ -6,13 +6,11 @@
   ],
   "scripts": {
     "app1": "yarn workspace @react-vite-federation-demo/app1 run dev",
-    "app2": "yarn workspace @react-vite-federation-demo/app2 run dev",
-    "app2 build": "yarn workspace @react-vite-federation-demo/app2 run build",
-    "app2 preview": "yarn workspace @react-vite-federation-demo/app2 run preview"
+    "app2": "yarn workspace @react-vite-federation-demo/app2 run start & yarn workspace @react-vite-federation-demo/app2 run preview",
+    "clean": "yarn cache clean && lerna clean --yes && rm -rf ./node_modules"
   },
   "dependencies": {
-    "@originjs/vite-plugin-federation": "^1.2.2",
-    "vite": "^4.4.6"
+    "@originjs/vite-plugin-federation": "^1.2.3"
   },
   "devDependencies": {
     "lerna": "^7.1.4"
